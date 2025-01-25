@@ -8,6 +8,9 @@ const productReducer = (state = initialState, {type, payload}) =>{
         case actionType.SET_PRODUCTS:
             // return [...state.products,payload]   wrong approach
             return {...state, products: payload};
+        case actionType.FETCH_PRODUCTS:
+            // return [...state.products,payload]   wrong approach
+            return {...state, products: payload};
 
         case actionType.SELECTED_PRODUCT:
             return {...state, product:{...payload}};
